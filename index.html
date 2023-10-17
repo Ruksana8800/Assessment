@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bit.ly/webdeveloperassignment</title>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.43.0/apexcharts.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+
+    <div class="grid-container">
+
+        <!-- Sidebar-->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-symbols-outlined">today</span>
+                </div>
+                Dashboard
+            </div>
+            <div class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined">dashboard</span>Dashboard
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined">emoji_objects</span>Product
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined">account_circle</span>Customers
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined">cases</span>Income
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined">verified</span>Promotion
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined">live_help</span>Help
+                </li>
+            </div>
+        </aside>
+        <!-- End of sidebar-->
+
+        <!-- Main -->
+        <main class="main-container">
+            <div class="main-title">
+                <div class="main-title-left">
+                    Hello!
+                    <span class="material-symbols-outlined">waving_hand</span>
+                </div>
+                <div class="main-title-right">
+                    <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text"id="searchtext" placeholder="search" pattern="[A-Z]{100}">
+                    </div>
+                </div>
+            </div>
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <span class="material-symbols-outlined">paid</span>
+                        <p class="text-primary">
+                            <sup><small>Earning</small></sup></small><br>$198k<br>
+                            <sub><small>&uarr;37.8% this month</small></sub>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <span class="material-symbols-outlined">summarize</span>
+                    <p class="text-primary">
+                        <sup><small>Orders</small></sup><br>$2.4k<br>
+                        <sub><small>&darr;2% this month</small></sub>
+                    </p>
+                    </div>
+                </div>
+               <div class="card">
+                <div class="card-inner">
+                    <span class="material-symbols-outlined">account_balance_wallet</span>
+                    <p class="text-primary">
+                        <sup><small>Balance</small></sup><br>$2.4k<br>
+                        <sub><small>&darr;2% this month</small></sub>
+                    </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <span class="material-symbols-outlined">lock</span>
+                    <p class="text-primary">
+                        <sup><small>Total Sales</small></sup><br>$89k<br>
+                        <sub><small>11% this month</small></sub>
+                    </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <p class="chart-title"><b>Overview</b><br><sub><small>Monthly Earning</small></sub></p>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <p class="chart2-title"><b>Customers</b><br><sub><small>Customers that buy products</small></sub></p>
+                    <div id="chart"></div>
+                </div>
+            </div>
+
+            <div class="tabular-wrapper">
+                <div class="tabmain-title">
+                    <b>Product Sell</b><br>
+
+                    <div class="table-container">
+                        <table>
+                        <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Stock &nbsp; &nbsp; &nbsp; &nbsp;</th>
+                            <th>Price &nbsp; &nbsp; &nbsp; &nbsp;</th>
+                            <th>Total Stores &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <img src="liv1.jpg" height="70px" width="140px">
+                                <p>
+                                    <big>&nbsp; &nbsp; &nbsp; &nbsp; Abstract 3D</big><br>
+                                    <sub><small> &nbsp; &nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit omet consectetur adipscing elit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</small></sub>
+                                </p>
+                            </td>
+                            <td>32 in stock</td>
+                            <td>$ 45.99</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="liv2.jpg" height="70px" width="140px">
+                                <p>
+                                    <big>Sarphens illustration</big><br>
+                                    <sub><small>Lorem ipsum dolor sit omet consectetur adipscing elit &nbsp; &nbsp; &nbsp; &nbsp;</small></sub>
+                                </p>
+                            </td>
+                            <td>32 in stock &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                            <td>$ 45.99  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                            <td>20 </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </main>>
+        <!-- End of Main1 -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- AppexCharts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.43.0/apexcharts.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
